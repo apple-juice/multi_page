@@ -1,0 +1,315 @@
+@media(min-width:768px) {
+	html {
+		font-size: 	16px;
+	}
+}
+
+@media(max-width:991px) {
+	.section--intro {
+		.h2 {
+			@include rem(margin-top, 13%)
+		}
+	}
+
+	.append_decoration {
+		width: auto;
+		height: auto;
+		margin-bottom: 0;
+
+		&:after {
+			bottom: -156px;
+		}
+
+		img {
+			max-width: 100%;
+			float: none;
+			@include rem(margin-bottom,  -40px);
+		}
+	}
+}
+
+@media(min-width:992px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+@media(max-width:1280px) {
+	.section--intro {
+		.h2 {
+			@include rem(margin-top, 15%)
+		}
+	}
+}
+
+@media(max-width:440px){
+  .visible-xxs {
+    display: block;
+  }
+
+  .hidden-xxs {
+    display: none !important;
+  }
+}
+
+@media all and (min-width: 980px) {
+
+}
+
+@media (max-width: 767px) {
+  .app {
+    overflow: hidden;
+  }
+  
+  .header--hero {
+    height: 633px;
+
+    h1 {
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 11px;
+    }
+  }
+
+  .header .hero__text {
+    padding: 15px 18px 0;
+
+    p {
+      max-width: none;
+    }
+  }
+
+  .checkout_btn {
+    bottom: 89px;
+    width: 227px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+      bottom: 89px;
+    }
+  }
+
+  .form--contact {
+    margin-top: -129px;
+    padding-top: 36px;
+
+    iframe {
+      min-height: 0;
+    }
+
+    .form__title {
+      margin-bottom: 20px;
+    }
+
+    .form__text {
+      margin-left: 0;
+      margin-right: 0;
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
+  }
+  
+  .footer {
+     .copy img {
+      margin-bottom: 27px;
+    }
+
+    &__title {
+      float: none;
+      width: 100%;
+      font-size: 12px;
+      line-height: 22px;
+      margin-bottom: 9px;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    &__about_us {
+      margin-bottom: 40px;
+    }
+
+    .social_list {
+      text-align: left;
+      margin-bottom: 40px;
+
+      &__item {
+        width: 25%;
+
+        a {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+
+  .logo {
+    img {
+      width: 37px;
+    }
+  }
+
+  .footer {
+    .copy {
+      margin-top: 20px;
+
+      img {
+        margin-bottom: 0;
+        margin-top: 18px;
+        width: 72px;
+      }
+
+      span {
+        font-size: 12px;
+      }
+    }
+
+    &__logo {
+      margin-bottom: 22px;
+    }
+
+    &__contacts {
+      li {
+        margin-bottom: 9px;
+      }
+
+      a {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .parallax-mirror {
+    display: none !important;
+  }
+
+  .header__bg {
+    background-color: #212121;
+    background-image: none !important;
+  }
+
+	.container {
+		max-width: 318px !important;
+	}
+
+  .section_block {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 297px;
+  }
+
+	.header--hero .iphone {
+		margin-left: 0;
+		margin-top: 40px;
+	}
+	.header .hero__text {
+    text-align: left;
+
+		br {
+			display: none;
+		}
+
+		p {
+      padding: 0;
+		}
+	}
+	.form--signup {
+		.form-group {
+			max-width: none;
+		}
+		p {
+			max-width: 220px;
+		}
+	}
+
+	.logo {
+		top: 12px;
+
+		//.container {
+		//	max-width: 100%;
+		//}
+	}
+
+	.apps {
+		margin-top: 100px;
+	}
+	.section--discover {
+		padding-top: 120px;
+	}
+
+	.section {
+		text-align: left;
+	}
+
+	.append_decoration {
+		margin-top: 30px;
+
+	}
+
+	.footer {
+		&__contacts {
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+	}
+
+	.section--discover {
+		&:after {
+			background: transparent !important;
+			box-shadow: inset 0 -170px 230px 0px #fbf5ee;
+		}
+	}
+
+	.section--discover {
+		p, .h2 {
+			float: left;
+		}
+	}
+
+	.append_decoration:after {
+		bottom: -135px;
+	}
+}
+
+@media(max-width:575px){
+
+	.form {
+		.form-group {
+			margin-top: 12px;
+		}
+	}
+
+	.form--signup .form-control {
+		height: 38px;
+	}
+
+	.header--hero .iphone {
+		margin-top: 47px;
+
+		img {
+			width: 375px;
+			margin-left: -29px;
+		}
+	}
+
+  .section--intro .container {
+    max-width: none !important;
+    width: 100%;
+  }
+
+  .form--contact .form__inner {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	//.container {
+	//	width: 100%;
+	//}
+}

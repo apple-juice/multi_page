@@ -1,0 +1,110 @@
+
+.disable_padding{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.link_apps {
+	list-style: none;
+	@include rem(padding, 2px 0 0 0);
+	font-size: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	overflow-x: auto;
+
+	li {
+		display:inline-block;
+		text-align: center;
+		@include rem(width, 80px);
+		@include rem(margin, 0 15px 14px 0);
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			color: $text_brown;
+			font-weight: normal;
+			display: block;
+			@include rem(font-size, 15px);
+
+			&:hover {
+				text-decoration: none;
+				color: #24272D;
+
+				img {
+					@include transform(translate(0, -2px))
+				}
+			}
+		}
+
+		img {
+			margin: auto;
+			position: relative;
+			background: #24272D;
+			@include rem(border-radius, 20px);
+			@include rem(margin-bottom, 4px);
+			@include transition($transition);
+		}
+	}
+}
+
+
+.social_list {
+	list-style: none;
+	padding:0;
+	font-size: 0;
+  margin-bottom: 0;
+
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+    text-align: left;
+
+    @include rem(width,  72px);
+    @include rem(margin-top,  -5px);
+
+    &:first-child {
+      @include rem(margin-left,  -5px);
+    }
+
+    a {
+			color: #876765;
+			@include rem(padding,  7px);
+			@include rem(font-size, 22px);
+			@include transition(all .3s ease);
+
+			&:hover {
+				color: $multi_red;
+			}
+		}
+	}
+}
+
+.copy {
+	img {
+		@include rem(width,  95px);
+	}
+}
+
+.label {
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.4px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+
+  @include rem(font-size, 18px);
+  @include rem(border-radius, 6px);
+  @include rem(padding, 9px 20px);
+}
+
+.label-gray {
+  background: #bbb;
+}

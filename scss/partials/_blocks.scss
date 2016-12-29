@@ -1,0 +1,72 @@
+.hero_block {
+  text-align: center;
+  overflow: hidden;
+
+  @include background-gradient(#fdfdfd, #9dd0f6);
+
+  &__header {
+    @include rem(margin, 77px 0);
+  }
+
+  &__intro {
+    font-family: 'Lato', arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #767373;
+
+    @include rem(font-size, 24px);
+    @include rem(margin-bottom, 40px);
+  }
+
+  &__place {
+    font-family: 'Lobster Two', cursive;
+    color: $text_brown;
+    font-weight: normal;
+    line-height: 0.8;
+    text-align: center;
+
+    @include rem(font-size, 56px);
+    @include rem(margin-bottom, 40px);
+  }
+
+  &__area {
+    font-family: 'Lato', arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: 2.5px;
+    text-align: center;
+    color: #767373;
+    text-transform: uppercase;
+
+    @include rem(font-size, 24px);
+  }
+  
+  &__img {
+    float: right;
+    position: relative;
+
+    @include rem(top, 40px);
+    @include transform(translate3d(0px, 27.2px, 0px));
+  }
+}
+
+.app_block {
+  background: #fff;
+  border-top: #dcdcdc solid 1px;
+  border-bottom: #dcdcdc solid 1px;
+
+  @include rem(padding, 16px 0);
+
+  .label {
+    @include rem(margin-right, 26px);
+  }
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+}
