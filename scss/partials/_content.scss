@@ -64,7 +64,7 @@
 }
 
 .content {
-  background: #fcfcfc url('../../images/group-copy@3x.png') no-repeat center bottom;
+  background: #fcfcfc url('../images/group-copy@3x.png') no-repeat center bottom;
 
   @include background-size(contain);
   @include rem(padding, 50px 0 230px);
