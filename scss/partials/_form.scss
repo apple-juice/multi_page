@@ -4,7 +4,7 @@
   @include transition($transition);
 }
 
-.btn-default {
+.btn-default, .btn-light {
   background-color: #f6f6f6;
   color: $multi_blue;
   border: 0;
@@ -29,6 +29,41 @@
 
   &:active {
     background-color: #eaeaea !important;
+  }
+}
+
+.btn-light {
+  background: rgba(#fff, .25);
+  color: #fff;
+
+  @include rem(font-size, 13px);
+  @include rem(padding, 10px 23px);
+
+
+  .fa {
+    color: #fff;
+  }
+
+  &:hover, &:active, &:focus {
+    background: rgba(#fff, .4) !important;
+    color: #fff !important;
+  }
+
+  + .btn-light {
+    @include rem(margin-top, 15px);
+  }
+}
+
+.btn-icon {
+  background: transparent;
+  color: #d5cbcb;
+  line-height: normal;
+
+  @include rem(font-size, 17px);
+  @include rem(padding, 0px 8px);
+
+  &:hover {
+    color: $alt_multi_blue;
   }
 }
 

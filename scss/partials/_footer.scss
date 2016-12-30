@@ -9,25 +9,35 @@
 
 	.container {
     max-width: 100%;
-		@include rem(width, 1110px);
+		@include rem(width, 1050px);
   }
 
-  &__inner {
+  .btn {
+    width: 100%;
+    max-width: 225px;
+    text-align: left;
 
-    @include rem(padding-top, 50px);
-    @include rem(padding-bottom, 50px);
-  }
-
-  &__logo {
-    @include rem(margin-bottom, 55px);
-
-    img {
-      @include rem(width, 100px);
+    .fa {
+      float: right;
     }
   }
 
-  &__about_us {
-    @include rem(margin-bottom, 50px);
+  hr {
+    border: 0;
+    border-bottom: solid 2px rgba(#fff, .35);
+
+    @include rem(margin, 29px 0 20px 0)
+  }
+
+  &__inner {
+    @include rem(padding-top, 53px);
+    @include rem(padding-bottom, 30px);
+  }
+
+  &__logo {
+    img {
+      @include rem(width, 80px);
+    }
   }
 
   &__socials {
@@ -45,19 +55,19 @@
     line-height: 1.43;
     color: #fff;
 
-    @include rem(font-size, 14px);
+    @include rem(font-size, 12px);
   }
 
   &__title {
     text-transform: uppercase;
-    font-family: $ff-alt;
+    font-family: $ff;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     letter-spacing: 0.2em;
-    color: #f05a48;
-    float: left;
+    color: #fff;
 
+    @include rem(margin-bottom, 5px);
     @include rem(font-size, 12px);
     @include rem(line-height, 23px);
     @include rem(margin-right, 8px);
@@ -73,23 +83,30 @@
 		margin: 0;
 		list-style: none;
 		text-align: left;
-    font-family: $ff-alt;
+    font-family: $ff;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
     letter-spacing: 0.3px;
     color: #fff;
+
     @include rem(font-size, 13px);
+    @include rem(margin-bottom, 10px);
+    @include rem(margin-top, 18px);
+
+    li {
+      @include rem(margin-bottom, 3px);
+    }
 
 		a {
       @include rem(font-size, 13px);
       @include rem(line-height, 20px);
       color: #fff;
-      text-decoration: underline;
+      text-decoration: none;
 			display: inline-block;
 
       &:hover {
-        text-decoration: none;
+        text-decoration: underline;
       }
 		}
 
@@ -109,12 +126,13 @@
 		span {
 			display: block;
       letter-spacing: -0.01em;
+
 			@include rem(font-size, 12px)
 		}
 
 		img {
 			opacity: .2;
-			@include rem(margin-bottom, 40px);
+			@include rem(margin-bottom, 15px);
 		}
 	}
 }
