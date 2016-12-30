@@ -56,14 +56,14 @@
 
 .btn-icon {
   background: transparent;
-  color: #d5cbcb;
+  color: #d5cbcb !important;
   line-height: normal;
 
   @include rem(font-size, 17px);
   @include rem(padding, 0px 8px);
 
   &:hover {
-    color: $alt_multi_blue;
+    color: $alt_multi_blue !important;
   }
 }
 

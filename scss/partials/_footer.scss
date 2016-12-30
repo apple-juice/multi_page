@@ -53,9 +53,17 @@
     font-style: normal;
     font-stretch: normal;
     line-height: 1.43;
-    color: #fff;
+    color: #cde0e9;
 
     @include rem(font-size, 12px);
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   &__title {
@@ -88,7 +96,7 @@
     font-style: normal;
     font-stretch: normal;
     letter-spacing: 0.3px;
-    color: #fff;
+    color: #fffdfb;
 
     @include rem(font-size, 13px);
     @include rem(margin-bottom, 10px);
@@ -102,11 +110,11 @@
       @include rem(font-size, 13px);
       @include rem(line-height, 20px);
       color: #fff;
-      text-decoration: none;
+      text-decoration: underline;
 			display: inline-block;
 
       &:hover {
-        text-decoration: underline;
+        text-decoration: none;
       }
 		}
 
