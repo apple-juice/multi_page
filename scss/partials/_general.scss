@@ -50,7 +50,7 @@ h2, .h2 {
 }
 
 .container {
-	@include rem(width, 1115px);
+	@include rem(width, 1020px + 30px);
 	max-width: 100%;
 }
 

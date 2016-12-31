@@ -2,33 +2,33 @@
   text-align: center;
   overflow: hidden;
 
-  @include background-gradient(#fdfdfd, #9dd0f6);
+  @include background-gradient(#a3d4f8, #429ada);
 
   &__header {
-    @include rem(margin, 77px 0);
+    @include rem(margin, 85px 0);
   }
 
   &__intro {
     font-family: 'Lato', arial, sans-serif;
-    font-weight: normal;
     line-height: 1.25;
     letter-spacing: 0.3px;
     text-align: center;
-    color: #767373;
+    color: #ffffff;
+    font-weight: bold;
 
-    @include rem(font-size, 24px);
-    @include rem(margin-bottom, 40px);
+    @include rem(font-size, 18px);
+    @include rem(margin-bottom, 50px);
   }
 
   &__place {
     font-family: 'Lobster Two', cursive;
-    color: $text_brown;
+    color: $text_darkbrown;
     font-weight: normal;
     line-height: 0.8;
     text-align: center;
 
     @include rem(font-size, 56px);
-    @include rem(margin-bottom, 40px);
+    @include rem(margin-bottom, 24px);
   }
 
   &__area {
@@ -37,7 +37,7 @@
     line-height: 1.25;
     letter-spacing: 2.5px;
     text-align: center;
-    color: #767373;
+    color: #fff;
     text-transform: uppercase;
 
     @include rem(font-size, 24px);
@@ -47,7 +47,7 @@
     float: right;
     position: relative;
 
-    @include rem(top, 40px);
+    @include rem(top, 16px);
     @include transform(translate3d(0px, 27.2px, 0px));
   }
 }
@@ -56,11 +56,19 @@
   background: #fff;
   border-top: #dcdcdc solid 1px;
   border-bottom: #dcdcdc solid 1px;
+  font-size: 16px;
 
-  @include rem(padding, 16px 0);
+  @include rem(padding, 13px 0);
 
   .label {
     @include rem(margin-right, 26px);
+  }
+
+  .emoji {
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 32px;
   }
 
   a {
